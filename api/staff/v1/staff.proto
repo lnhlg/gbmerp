@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package api.staff.v1;
+
+import "errors/errors.proto";
+
+option go_package = "gbmerp/api/staff/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.staff.v1";
+
+service Staff {
+	rpc GetStaff (GetStaffRequest) returns (GetStaffReply);
+}
+
+message GetStaffRequest {
+	string staffno = 1;
+}
+
+message GetStaffReply {
+	int64 id = 1;
+	string no = 2;
+	string name = 3;
+	string gender = 4;
+	int64 deptid = 5;
+	int64 dutyid = 6;
+}
+
+enum ErrorReason {
+	// 设置缺省错误码
+	option (errors.default_code) = 500;
+
+	STAFFNO_MISSING = 0 [(errors.code) = 400];
+		GETSTAFF_FAILED = 1 [(errors.code) = 500];
+}

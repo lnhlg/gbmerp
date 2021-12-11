@@ -1,0 +1,27 @@
+server:
+  http:
+    addr: 0.0.0.0:8900
+    timeout: 1s
+  grpc:
+    addr: 0.0.0.0:9900
+    timeout: 10s
+data:
+  database:
+    driver: mssql
+    source: sqlserver://tempwrite:_zxb.write.erp99@10.28.0.99?database=bsmaster&encrypt=disable
+  redis:
+    addr: 10.28.83.128:6379
+    read_timeout: 0.2s
+    write_timeout: 0.2s
+registry:
+  nacosServers:
+    - address: 10.28.83.128
+      port: 8848
+  nacosClient:
+    namespace: bc13296a-df71-44c0-9a98-29c2e3a63017
+    timeout: 50000
+auth:
+  api_key: gbmerp.user.2021129szcy
+  expire: 7
+trace:
+  endpoint: http://127.0.0.1:14268/api/traces

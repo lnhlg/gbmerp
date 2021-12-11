@@ -1,0 +1,23 @@
+2021-12-11T17:21:10.222+0800	[34mINFO[0m	udp server start, port: 55669
+2021-12-11T17:21:10.224+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.user.grpc with DEFAULT to listener map
+2021-12-11T17:21:10.236+0800	[34mINFO[0m	Local IP:10.28.83.103
+2021-12-11T17:21:10.239+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.user.grpc@@DEFAULT
+2021-12-11T17:21:10.241+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.staff.grpc with DEFAULT to listener map
+2021-12-11T17:21:10.244+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.staff.grpc@@DEFAULT
+2021-12-11T17:21:10.246+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.duty.grpc with DEFAULT to listener map
+2021-12-11T17:21:10.247+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.duty.grpc@@DEFAULT
+2021-12-11T17:21:10.249+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.department.grpc with DEFAULT to listener map
+2021-12-11T17:21:10.250+0800	[33mWARN[0m	instance list is empty,json string:{"name":"DEFAULT_GROUP@@gbmerp.department.grpc","groupName":"DEFAULT_GROUP","clusters":"DEFAULT","cacheMillis":10000,"hosts":[],"lastRefTime":1639214463560,"checksum":"","allIPs":false,"reachProtectionThreshold":false,"valid":true}
+2021-12-11T17:21:10.250+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.department.grpc@@DEFAULT
+2021-12-11T17:21:10.252+0800	[34mINFO[0m	logDir:<E:\work\self\go\gbmerp\app\interface\cmd\log>   cacheDir:<E:\work\self\go\gbmerp\app\interface\cmd\cache>
+2021-12-11T17:25:24.212+0800	[34mINFO[0m	udp server start, port: 55920
+2021-12-11T17:25:24.214+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.user.grpc with DEFAULT to listener map
+2021-12-11T17:25:24.228+0800	[34mINFO[0m	Local IP:10.28.83.103
+2021-12-11T17:25:24.230+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.user.grpc@@DEFAULT
+2021-12-11T17:25:24.231+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.staff.grpc with DEFAULT to listener map
+2021-12-11T17:25:24.238+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.staff.grpc@@DEFAULT
+2021-12-11T17:25:24.239+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.duty.grpc with DEFAULT to listener map
+2021-12-11T17:25:24.241+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.duty.grpc@@DEFAULT
+2021-12-11T17:25:24.241+0800	[34mINFO[0m	adding DEFAULT_GROUP@@gbmerp.department.grpc with DEFAULT to listener map
+2021-12-11T17:25:24.243+0800	[34mINFO[0m	service not found in cache DEFAULT_GROUP@@gbmerp.department.grpc@@DEFAULT
+2021-12-11T17:25:24.244+0800	[34mINFO[0m	logDir:<E:\work\self\go\gbmerp\app\interface\cmd\log>   cacheDir:<E:\work\self\go\gbmerp\app\interface\cmd\cache>

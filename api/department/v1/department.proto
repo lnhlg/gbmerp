@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package api.department.v1;
+
+option go_package = "gbmerp/api/department/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.department.v1";
+
+service Department {
+	rpc GetDepartment (GetDepartmentRequest) returns (GetDepartmentReply);
+}
+
+message GetDepartmentRequest {
+	int64 id = 1;
+}
+
+message GetDepartmentReply {
+	int64 id = 1;
+	string no = 2;
+	string name = 3;
+}

@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package api.user.v1;
+
+import "errors/errors.proto";
+
+option go_package = "gbmerp/api/user/v1;v1";
+option java_multiple_files = true;
+option java_package = "api.user.v1";
+
+service User {
+	rpc GetUser (GetUserRequest) returns (GetUserReply);
+}
+
+message GetUserRequest {
+	string userName = 1;
+	optional string password = 2;
+}
+
+message GetUserReply {
+	string userID = 1;
+	string userName = 2;
+	string staffID = 3;
+	string userType = 4;
+}
+
+enum ErrorReason {
+	// 设置缺省错误码
+	option (errors.default_code) = 500;
+
+	// 为某个枚举单独设置错误码
+	USER_NAME_MISSING = 0 [(errors.code) = 400];
+
+	PASSWORD_WRONG = 1 [(errors.code) = 401];;
+}
